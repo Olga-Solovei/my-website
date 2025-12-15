@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с собачкой</title>
+    <meta name="description" content="Сайт для практики 10">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">WoofWoof</a>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Главный раздел -->
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Добро пожаловать на WoofWoof сайт</h1>
+                    <p>Просто красивый сайт с собачкой</p>
+                    <a href="#about" class="btn">Узнать больше</a>
+                </div>
+                <div class="hero-image">
+                    <picture>
+                        <img src="3.png" alt="Изображение для веб-сайта" loading="lazy" width="600" height="400">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>О WoofWoof сайте</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Быстро</h3>
+                        <p>Сайт загружается мгновенно благодаря оптимизации кода и изображений.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">📱</div>
+                        <h3>Адаптивно</h3>
+                        <p>Идеально отображается на всех устройствах: от смартфонов до десктопов.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">🎨</div>
+                        <h3>Красиво</h3>
+                        <p>Современный дизайн минималистичный дизайн с приятными цветами.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Наши навыки</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Веб-дизайн</h3>
+                        <p>Современные и удобные интерфейсы</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Разработка</h3>
+                        <p>Чистый и эффективный код для веб-приложений и сайтов</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Поддержка</h3>
+                        <p>Постоянную поддержку и обновление вашего сайта</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><span class="contact-icon">📧</span> woofwoofwebsite@gmail.com</p>
+                        <p><span class="contact-icon">📞</span> +7 (800) 555-35-35</p>
+                        <p><span class="contact-icon">📍</span> Москва, Россия</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Ваше имя" required aria-label="Ваше имя">
+                        <input type="email" placeholder="Ваш email" required aria-label="Ваш email">
+                        <textarea placeholder="Ваше сообщение" rows="4" required aria-label="Ваше сообщение"></textarea>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear">2025</span> WoofWoof сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
