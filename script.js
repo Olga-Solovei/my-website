@@ -1,16 +1,15 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-const icons = this.querySelectorAll('.menu-icon');
-const sections = document.querySelectorAll('section[id]');
-const navItems = document.querySelectorAll('.nav-links a');
-const cards = document.querySelectorAll('.about-card, .service-card');
-
+// Ждём загрузки DOM
 document.addEventListener('DOMContentLoaded', function() {
-
+    // 1. Мобильное меню
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+            
             // Анимация иконки меню
+            const icons = this.querySelectorAll('.menu-icon');
             if (navLinks.classList.contains('active')) {
                 // Превращаем в крестик
                 icons[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
@@ -88,7 +87,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 5. Добавляем активный класс к текущему разделу при скролле
     window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section[id]');
+        const navItems = document.querySelectorAll('.nav-links a');
+        
         let current = '';
+        
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.clientHeight;
@@ -105,5 +108,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
 });
